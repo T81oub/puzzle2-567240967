@@ -10,28 +10,6 @@
         <link rel="stylesheet" href="stylespage.css">
 
         <title>PUZZLE 2</title>
-        <script
-          src="https://code.jquery.com/jquery-3.4.1.js"
-          integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-          crossorigin="anonymous"></script>
-       <script>
-    function SubForm (){
-       $.ajax({
-        url:'https://api.apispreadsheets.com/data/No5amquVwtEd3awW/',
-        headers: {"accessKey": "YOUR_ACCESS_KEY", "secretKey": "YOUR_ACCESS_KEY"},
-        type:'post',
-        data:$("#myForm").serializeArray(),
-        success: function(){
-          
-          window.location.href="puzzle2.html";
-        },
-        error: function(){
-          alert("There was an error :(")
-        }
-    });
-   
-}
-</script>
     </head>
     <body>
         
@@ -136,19 +114,14 @@ hint:<br>
                             
                             <div class="complete_text">Welcome to #puzzle2 !</div>
                             <div class="score_text">
-                                <form id="myForm" >
-                                    <input name="puzzle" type="hidden"  value="Puzzle2">
-                                    <label>Full Name</label>
-                                    <br/>
-                                    <input name="full_name" />
-                                    <input name="ii" type="hidden"  value="Puzzle2">
-                                  </form>
-                                  <div class="buttons">
-                                    <button onclick="SubForm()" class="start">Start Puzzle</button>
-                                  </div>
-                                  
+                               <p>You have successfully entered puzzle 2. You did well on the previous task, and now I'll tell you a tale. I used to go to my grandma's house every day when I was 300 years old and sip her delicious "meat gases smoothie." You might be wondering why I said "I used to," considering that we're ghosts and never die, but I actually live in another dimension with my wife and my little child. Never mind, according to my grandma, the closest to us is closest to the solution.and keep in mind that my grandma is always right.
+                                <br><br>
+                                Best of luck!
+                               </p>
                             </div>
-                            
+                            <div class="buttons">
+                                <button class="start">Start Puzzle</button>
+                            </div>
                         </div>
                         
                         
@@ -156,6 +129,6 @@ hint:<br>
             </section>
             
             </main>
-       
+        <script src="index.js"></script>
     </body>
 </html>
