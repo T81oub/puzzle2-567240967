@@ -22,7 +22,7 @@
         type:'post',
         data:$("#myForm").serializeArray(),
         success: function(){
-          alert("Welcome To puzzle 2 :)")
+          
           window.location.href="puzzle2.html";
         },
         error: function(){
@@ -136,7 +136,7 @@ hint:<br>
                             
                             <div class="complete_text">Welcome to #puzzle2 !</div>
                             <div class="score_text">
-                                <form id="myForm" action="puzzle2.html">
+                                <form id="myForm" >
                                     <input name="puzzle" type="hidden"  value="Puzzle2">
                                     <label>Full Name</label>
                                     <br/>
