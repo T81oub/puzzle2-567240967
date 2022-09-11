@@ -81,11 +81,11 @@ def function(L:list):<br>
     j←2
     tant que j &lt;=longueur(L):
          i←j-1
-         k←t[j]<br>
-         tant que i>0 et que t[i]>k: 
-             t[i+1]←t[i]
+         k←L[j]<br>
+         tant que i>0 et que L[i]>k: 
+             L[i+1]←L[i]
              i←i-1<br>
-         t[i+1]←k
+         L[i+1]←k
          j←j+1<br>
     retourner(L)
  <br>
