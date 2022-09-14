@@ -78,11 +78,11 @@
                                     <h1 class="home__title">PUZZLE 2</h1>
                                     <pre class="home__description">
 def function(L:list):<br>
-    j←2
-    tant que j &lt;=longueur(L):
+    j←1
+    tant que j &lt; longueur(L):
          i←j-1
          k←L[j]<br>
-         tant que i>0 et que L[i]>k: 
+         tant que i >= 0 et  L[i] > k: 
              L[i+1]←L[i]
              i←i-1<br>
          L[i+1]←k
